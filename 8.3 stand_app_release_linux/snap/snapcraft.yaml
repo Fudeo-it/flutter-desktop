@@ -1,0 +1,25 @@
+name: standapp
+version: 1.0.0
+summary: Fudeo StandApp
+description: StandApp reminds you to stand up every hour
+icon: snap/gui/standapp.png
+
+confinement: strict
+base: core18
+grade: devel
+
+apps:
+  standapp:
+    command: stand_app
+    extensions:
+      - flutter-stable
+
+parts:
+  standapp:
+    source: .
+    plugin: flutter
+    flutter-target: lib/main.dart
+
+build-packages:
+  - libnotify-dev
+  - libappindicator3-dev

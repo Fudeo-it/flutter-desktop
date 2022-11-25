@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=StandApp
+Comment=StandApp reminds you to stand up every hour
+Exec=stand_app
+Icon=${SNAP}/meta/gui/standapp.png
+Terminal=false
+Type=Application
+Categories=Productivity

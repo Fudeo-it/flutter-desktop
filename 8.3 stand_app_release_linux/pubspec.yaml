@@ -1,0 +1,41 @@
+name: stand_app
+description: A new Flutter project.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.2 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.5
+  lottie: ^1.4.3
+  flutter_bloc: ^8.1.1
+  equatable: ^2.0.5
+  provider: ^6.0.4
+  local_notifier: ^0.1.5
+  launch_at_startup: ^0.2.0
+  package_info_plus: ^3.0.1
+  system_tray: ^2.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.1
+  msix: ^3.7.0
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/animations/walking.json
+    - assets/icons/icon.ico
+    - assets/icons/icon.png
+
+msix_config:
+  display_name: Stand App
+  publisher_display_name: Publisher
+  identity_name: IdPublisher.StandApp
+  logo_path: 'C:\Users\angya\Flutter Projects\Flutter Desktop\stand_app_release_windows\assets\icons\icon.png'
+  store: true
+  publisher: 'CN=publisher_id'
+  capabilites: runFullTrust
